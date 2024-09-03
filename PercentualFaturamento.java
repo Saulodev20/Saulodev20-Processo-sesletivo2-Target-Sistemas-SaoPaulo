@@ -6,6 +6,7 @@ public class PercentualFaturamento {
         double es = 27165.48;
         double outros = 19849.53;
 
+        // Soma
         double faturamentoTotal = sp + rj + mg + es + outros;
 
         System.out.printf("Percentual de SP: %.2f%%%n", (sp / faturamentoTotal) * 100);

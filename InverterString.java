@@ -5,6 +5,7 @@ public class InverterString {
         Scanner scanner = new Scanner(System.in);
         String resposta;
 
+        // Adicionado um ciclo de repetição 
         do {
             System.out.print("Digite uma string: ");
             String original = scanner.nextLine();
