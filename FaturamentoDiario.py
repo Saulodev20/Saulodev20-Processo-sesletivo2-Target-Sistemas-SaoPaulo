@@ -13,7 +13,7 @@ faturamento = json.loads(dados)["faturamento"]
 # Removendo dias sem faturamento
 faturamento = [valor for valor in faturamento if valor != 0]
 
-# Calculando valores
+# Calculando os valores
 menor_valor = min(faturamento)
 maior_valor = max(faturamento)
 media_mensal = sum(faturamento) / len(faturamento)

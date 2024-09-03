@@ -3,21 +3,29 @@ import java.util.Scanner;
 public class InverterString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String resposta;
 
-        System.out.print("Digite uma string: ");
-        String original = scanner.nextLine();
+        do {
+            System.out.print("Digite uma string: ");
+            String original = scanner.nextLine();
+
+            String invertida = inverterString(original);
+            System.out.println("String invertida: " + invertida);
+
+            System.out.print("Deseja inverter outra string? (sim/não): ");
+            resposta = scanner.nextLine().toLowerCase();
+        } while (!resposta.equals("não"));
+
         scanner.close();
-
-        String invertida = inverterString(original);
-        System.out.println("String invertida: " + invertida);
+        System.out.println("Programa encerrado.");
     }
 
     public static String inverterString(String s) {
-        String invertida = "";
+        StringBuilder invertida = new StringBuilder();
         for (int i = s.length() - 1; i >= 0; i--) {
-            invertida += s.charAt(i);
+            invertida.append(s.charAt(i));
         }
-        return invertida;
+        return invertida.toString();
     }
 }
 
