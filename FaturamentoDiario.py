@@ -6,7 +6,7 @@ dados = '''
     "faturamento": [1000, 0, 1200, 900, 0, 0, 1300, 0, 1000, 1100, 0, 1050, 900, 0, 0, 1000, 1100, 950, 0, 0, 0, 1000, 0, 1050, 0, 1150, 0, 1200, 0, 1250]
 }
 '''
-
+#Adicionado para atualização do GIT HUB
 # Carregando os dados
 faturamento = json.loads(dados)["faturamento"]
 

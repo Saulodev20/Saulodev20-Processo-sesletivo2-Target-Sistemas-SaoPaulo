@@ -5,7 +5,7 @@ public class InverterString {
         Scanner scanner = new Scanner(System.in);
         String resposta;
 
-        // Adicionado um ciclo de repetição 
+        // Adicionado para atualização do GIT HUB
         do {
             System.out.print("Digite uma string: ");
             String original = scanner.nextLine();

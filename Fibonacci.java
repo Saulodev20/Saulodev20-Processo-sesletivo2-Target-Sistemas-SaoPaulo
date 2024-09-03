@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+    //Adicionado para atualização do GIT HUB
 
         System.out.print("Digite um número: ");
         int numero = scanner.nextInt();
